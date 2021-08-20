@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.left{
+    background-color: blue;
+    width: 90%;
+    padding: 30px;
+}
+.right{
+    margin-left: 20px;
+}
+.resume{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+li{
+    margin: 10px;
+}
+.right h2{
+    background-color: rgb(71, 71, 247);
+}
