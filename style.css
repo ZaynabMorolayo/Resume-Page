@@ -113,7 +113,7 @@ body{
     height: 100%;
 }
 .right-content{
-    padding: 20px 30px;
+    padding: 2rem 3rem;
 }
 /* li{
     margin: 10px;
@@ -180,15 +180,36 @@ body{
     color: rgb(15, 15, 44);
 }
 
-@media (max-width: 780px) {
-    /* .company{
-        grid-template-columns: 1, 1fr;
-    } */
-    .left{
+@media (max-width: 600px) {
+    .resume{
+        width: 90%;
+    }
+    .company{
+        grid-template-columns: 3, 1fr;
+    }
+    .company-left{
+        grid-column: span 1;
+    }
+    .role{
         grid-column: span 2;
     }
+    .company-left p{
+        margin: 7px 0;
+    }
+    .company-title2{
+        margin: 7px 0;
+    }
+}
+
+@media (max-width: 780px) {
+    .company{
+        grid-template-columns: 1, 1fr;
+    }
+    .left{
+        grid-column: span 3;
+    }
     .right{
-        grid-column: span 5;
+        grid-column: span 4;
     }
 }
 @media (max-width: 1000px) {
