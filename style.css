@@ -1,25 +1,212 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
 }
 body{
-    margin: 0;
-}
-.left{
-    background-color: blue;
-    width: 90%;
-    padding: 30px;
-}
-.right{
-    margin-left: 20px;
+    background-color: lightblue;
 }
 .resume{
+    min-height: 100vh;
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.left{
+    background-color: rgb(30, 30, 48);
+    grid-column: span 2;
+    height: 100%;
+}
+.left-content{
+    padding: 20px 30px;
+}
+.intro{
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+.img{
+    width: 100%;
+    text-align: center;
+}
+.intro img{
+    border-radius: 50%;
+    width: 100%;
+    border: 7px solid rgb(49, 49, 85);
+}
+.intro h1{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 7px 0;
+}
+.intro p{
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-bottom: 7px;
+    color: lightblue;
+}
+.title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: white;
+    letter-spacing: 1px;
+    padding: 20px 0;
+}
+.info ul li{
+    padding: 5px 0;
     display: flex;
-    width: 90%;
-    margin: auto;
+    align-items: center;
+    color: rgb(173, 169, 169);
 }
-li{
+.info ul li i{
+    color: skyblue;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.professional ul li{
+    color: rgb(173, 169, 169);
+    padding: 5px 0;
+    list-style-type: disc;
+}
+.skill-name{
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 0;
+}
+.progress-box{
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    height: 5px;
+    background-color: rgb(15, 15, 44);
+}
+.progress{
+    position: absolute;
+    background-color: skyblue;
+    border-radius: 12px;
+    height: 100%;
+}
+.ms-progress{
+    width: 70%;
+}
+.dm-progress{
+    width: 50%;
+}
+.internet-progress{
+    width: 80%;
+}
+.software-progress{
+    width: 40%;
+}
+.right{
+    grid-column: span 5;
+    background-color: white;
+    height: 100%;
+}
+.right-content{
+    padding: 20px 30px;
+}
+/* li{
     margin: 10px;
-}
+} */
 .right h2{
-    background-color: rgb(71, 71, 247);
+    background-color: skyblue;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: white;
+    letter-spacing: 1px;
+    padding: 3px;
+}
+.summary p{
+    color: rgb(63, 63, 63);
+    padding: 15px 0px;
+}
+.company{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px 0;
+}
+.company-title{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.company-title2{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color:  blue;
+}
+.role li{
+    list-style-type: disc;
+}
+.courses{
+    margin: 10px 0;
+}
+.courses li{
+    color:  rgb(63, 63, 63);
+    padding: 5px 0;
+    list-style-type: disc;
+}
+.interest-list{
+    padding: 20px 0;
+}
+.interest-list ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.interest-list ul li i{
+    color: rgb(63, 63, 63);
+    font-size: 15px;
+    margin-right: 5px;
+}
+.zuri{
+    width: 30%;
+    padding: 30px 0 10px;
+}
+.zuri img{
+    width: 100%;
+}
+.zuri a{
+    color: rgb(15, 15, 44);
+}
+
+@media (max-width: 780px) {
+    /* .company{
+        grid-template-columns: 1, 1fr;
+    } */
+    .left{
+        grid-column: span 2;
+    }
+    .right{
+        grid-column: span 5;
+    }
+}
+@media (max-width: 1000px) {
+    .resume{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .intro img{
+        width: 40%;
+    }
+}
+@media (max-width: 740px) {
+    .intro img{
+        width: 60%;
+    }
+}
+@media (max-width: 1275px) {
+    .interest-list ul{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
