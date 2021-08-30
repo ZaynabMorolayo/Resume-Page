@@ -11,6 +11,7 @@ body{
 .resume{
     min-height: 100vh;
     width: 80%;
+    max-width: 1300px;
     margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -203,7 +204,7 @@ body{
 
 @media (max-width: 780px) {
     .company{
-        grid-template-columns: 1, 1fr;
+        grid-template-columns: repeat(1, 1fr);
     }
     .left{
         grid-column: span 3;
