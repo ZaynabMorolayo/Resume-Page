@@ -106,7 +106,7 @@ body{
     width: 80%;
 }
 .software-progress{
-    width: 40%;
+    width: 50%;
 }
 .right{
     grid-column: span 5;
